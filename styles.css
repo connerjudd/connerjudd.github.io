@@ -38,6 +38,13 @@ body,h1,h2,h3,h4,h5,h6 {
     color: white;
 }
 
+/* headshot image */
+
+.headshot {
+    height: 25%;
+    width: 25%;
+}
+
 footer { 
     background-color: #333;
     text-align: center;
