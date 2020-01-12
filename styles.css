@@ -6,11 +6,11 @@ body,h1,h2,h3,h4,h5,h6 {
 /* Navigation Bar */
 
 .bar {
+    float: left;
     color: white;
     background-color:#333;
     margin: 0;
     padding: 0;
-    display: inline;
     list-style-type: none;
     overflow: hidden;
     }
@@ -32,7 +32,6 @@ header {
     float:left;
     text-align: center;
     font-weight: bold;
-    display: block;
     background-color: #333;
     color: white;
 }
@@ -44,7 +43,6 @@ header {
     height: 600px;
     width: 400px;
     text-align:center;
-    display: block;
     background-color: #333;
 }
 
