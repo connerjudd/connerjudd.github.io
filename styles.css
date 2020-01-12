@@ -16,7 +16,6 @@ body,h1,h2,h3,h4,h5,h6 {
     }
 
 .bar-item{
-    float: left;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -29,11 +28,11 @@ body,h1,h2,h3,h4,h5,h6 {
 /* Header*/
 
 header {
-    float:left;
     text-align: center;
     font-weight: bold;
     background-color: #333;
     color: white;
+    padding: 30px;
 }
 
 /* headshot image */
