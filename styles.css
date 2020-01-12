@@ -45,6 +45,7 @@ header {
     width: 400px;
     text-align:center;
     display: block;
+    background-color: #333;
 }
 
 footer { 
