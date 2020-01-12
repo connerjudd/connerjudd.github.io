@@ -36,6 +36,11 @@ header {
     background-color:#111;
 }
 
+h3 {
+    list-style-type: none;
+    padding: 0;
+}
+
 
 /* headshot image */
 
