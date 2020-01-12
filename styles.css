@@ -3,27 +3,6 @@ body,h1,h2,h3,h4,h5,h6 {
     }
 
 
-/* Navigation Bar */
-
-.bar {
-    float: left;
-    color: white;
-    background-color:#333;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    overflow: hidden;
-    }
-
-.bar-item{
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.bar-item:hover {
-    background-color:#111;
-}
 
 /* Header*/
 
@@ -34,6 +13,29 @@ header {
     color: white;
     padding: 30px;
 }
+
+    /* Navigation Bar */
+
+.bar {
+    color: white;
+    background-color:#333;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    }
+
+.bar-item{
+    float:left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.bar-item:hover {
+    background-color:#111;
+}
+
 
 /* headshot image */
 
