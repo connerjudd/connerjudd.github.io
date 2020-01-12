@@ -39,12 +39,13 @@ header {
 
 /* headshot image */
 
-.headshot {
+.headshot:after {
     float:left;
     height: 600px;
     width: 400px;
     text-align:center;
     background-color: #333;
+    clear: both;
 }
 
 footer { 
@@ -52,5 +53,4 @@ footer {
     text-align: center;
     padding: 10px;
     color: white;
-    display: block;
 }
