@@ -31,12 +31,13 @@ body,h1,h2,h3,h4,h5,h6 {
 header {
     float:left;
     text-align: center;
-    padding: 20px;
     font-weight: bold;
     display: block;
     background-color: #333;
     color: white;
 }
+
+
 
 /* headshot image */
 
