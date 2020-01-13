@@ -51,13 +51,13 @@ ul {
 
 /* headshot image */
 
-.headshot:after {
-    float:left;
+.headshot img {
+    position: absolute;
     height: 600px;
     width: 400px;
-    text-align:center;
     background-color: #333;
     clear: both;
+    right: 300px;
 }
 
 footer { 
