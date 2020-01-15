@@ -1,0 +1,124 @@
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Lato", sans-serif;
+}
+
+.topmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+  .topmenu li {
+    float: left;
+}
+  
+  .topmenu li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+  
+  .topmenu li a:hover {
+    background-color: #222;
+}
+  
+  .topmenu li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+
+
+
+
+/* Header*/
+
+header {
+    text-align: center;
+    font-weight: bold;
+    background-color: #333;
+    color: white;
+    padding: 30px;
+}
+
+.header {
+    background-color:#111;
+    color:white;
+    text-align: center;
+    font-size: 30px;
+    padding:30px;
+}
+
+.content {
+    list-style-type: none;
+    font-size: 30px;
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+}
+
+
+a:link {
+    color:black;
+}
+
+a:visited {
+    color:black;
+}
+
+a:hover {
+    color:grey;
+}
+
+a:active {
+    color: yellow;
+}
+
+.mdnSite:link {
+    color:white;
+}
+
+.mdnSite:visited {
+    color:white;
+}
+
+.mdnSite:hover {
+    color:grey
+}
+
+.mdnSite:active{
+    color:white
+}
+
+/* headshot image */
+
+.photo img {
+    float: right;
+    overflow: auto; 
+    height: 600px;
+    width: 400px;
+    background-color: #333;
+    clear: both;
+    right: 300px;
+    border-style:solid;
+    border-color:#333;
+    border-width: medium;
+    
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+footer { 
+    float:none;
+    background-color: #111;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    border-bottom: 10px solid #333;
+}
