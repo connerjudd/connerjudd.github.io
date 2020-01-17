@@ -31,25 +31,28 @@ body,h1,h2,h3,h4,h5,h6 {
     background-color: #4CAF50;
 }
 
-
-
-
 /* Header*/
 
 header {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    /* Used the -#px to move  */
+    margin-bottom:-400px;
+}
+       
+h1{
+    height:10%;
+    font-size:300%;
     text-align: center;
     font-weight: bold;
-    background-color: #333;
+    background-color: #111;
     color: white;
-    padding: 30px;
-}
-
-.header {
-    background-color:#111;
-    color:white;
-    text-align: center;
-    font-size: 30px;
-    padding:30px;
+    padding: 50px;
+    width:100%;
+    border:0;
+    margin-top:0;
+    align-items: center;
 }
 
 .lessons {
@@ -103,13 +106,12 @@ a:active {
     overflow: auto; 
     height: 600px;
     width: 400px;
-    background-color: #333;
+    background-color: #111;
     clear: both;
     right: 300px;
     border-style:solid;
-    border-color:#333;
+    border-color:#111;
     border-width: medium;
-    
 }
 .clearfix::after {
     content: "";
@@ -124,4 +126,5 @@ footer {
     padding: 10px;
     color: white;
     border-bottom: 10px solid #333;
+    margin-top:10%;
 }

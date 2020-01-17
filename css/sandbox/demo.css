@@ -1,0 +1,49 @@
+/* always start with imports */
+@import url("/css/normalize.css");
+
+
+/* Always code the generic rules first */
+/* html is considered the root element because it covers everything*/
+
+/* General Rules that apply to all devices */
+
+html * {
+    box-sizing: border-box;
+}
+
+*::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 18px; /*1em or 1rem. Pixels are considered a fixed size, em are a relative size.*/
+}
+
+/* Mobile Rules Next */
+
+#wrapper {
+    width: 100%; 
+    background-color: yellow;
+}
+
+/* Larger Screen Rules */
+
+/*dived the width by the pixel density to find actual pixel size of devices.*/
+@media screen and (min-width: 680px){
+    #wrapper{
+        width:80%;
+        margin:0 auto; /*when you have two numbers the first means top/bottom the second is left/right*/
+        max-width:1300px;
+        background-color: wheat;
+        font-size: 4vw; /*vw= viewport width*/
+    }
+
+    #navList{
+        display:flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+}
+
