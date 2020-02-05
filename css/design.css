@@ -1,0 +1,76 @@
+
+
+.topmenu {
+    list-style-type: none;
+    margin: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.topmenu li {
+    float: left;
+}
+
+.topmenu li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.topmenu li a:hover {
+    background-color: #222;
+}
+
+.topmenu li a:active {
+    color: white;
+    background-color: #4CAF50;
+}
+
+
+#site-name {
+    text-align: center;
+    color: white;
+    background-color: #111;
+    margin: none;
+    border: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: white;
+    background-color:white;
+
+}
+main section {
+	margin: 0;
+	border: 25px solid #111;
+	padding: 0 1rem;
+	background-color:#333;
+}
+
+#hicksimg {
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+#amazon-link:hover {
+    background-color: #222;
+}
+
+#amazon-link:active {
+    color: white;
+    background-color: #4CAF50;
+}
+
+
+    
