@@ -2,52 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Assignment Portal</title>
-    <meta name="author" content="Conner Judd">
-    <meta name="description" content="Assignment portal for Conner Judd in CIT 230: Web Frontend Development at Brigham Young University - Idaho">
-    <link rel="stylesheet" href="css/normalize.css">
+    <meta name="description"
+    content="Assignment portal for Conner Judd in CIT 230: Web Frontend Development at Brigham Young University - Idaho."
+    author="Conner Judd">
+    <title>Course Portal Home Page</title>
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="/css/medium-screen.css">
+    <link rel="stylesheet" href="/css/large-screen.css">
 </head>
 <body>
-
-<!--Top Menu-->
 <nav>
-<ul class="topmenu">
-    <li><a href="#home" class="active">Home</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#about">About</a></li>
-</ul>
-</nav>
-<!-- Header -->
-<header> 
-    <h1>Conner Judd</h1>
-    <img src="/imges/headshot.jpg" alt="Headshot of creator of website" width="400px">
-</header>
-<div class="content">
-<p>CIT 230: Assignment Portal</p>
-    <ul class="lessons">
-        <li>Lesson 02 | <a href="/design/index.html">Design Principles</a></li>
-        <li>Lesson 03 | <a href="/weather/docs/plan/index.html">Weather Site Plan</a></li>
-        <li>Lesson 04 | <a href="#">Preston Home Page</a></li>
-        <li>Lesson 05 | <a href="#">CodePen</a></li>
-        <li>Lesson 06 | <a href="#">Weather Page</a></li>
-        <li>Lesson 07 | <a href="#">Weather Site Home Page</a></li>
+    <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Design Principles</a></li>
+        <li><a href="#">Weather Site</a></li>
+        <li><a href="#">Preston</a></li>
+        <li><a href="#">Presentation</a></li>
+
     </ul>
-</div>
-   
-    <div class="clearfix"></div>
+</nav>
+<div class="grid-container">
+<header>
+    <h1 class="item1">Conner Judd</h1class="item1">
+    <img  class ="item3" id="headshot" src="/imges/headshot.jpg" alt="photograph of the creator of the site">
+</header>
+<section class="item2">
+<h2>Lessons</h2>
 
-<div>
-<footer>
-   &copy; 2020 | Conner Judd | <a class="mdnSite" href="#">MDN Documentation Site</a> | BYU-Idaho<br>
-   Current Date: <span id="copyrightdate"></span><br>
-   Last Updated: <span id="lastmodified"></span>
+<ul>
+    <li><a href="/design/">Lesson 2 | Design Principles</a></li>
+    <li><a href="#">Lesson 3 | Weather Site Planning Document</a></li>
+    <li><a href="#">Lesson 4 | Preston Weather</a></li>
+    <li><a href="#">Presentation</a></li>
+</ul>
 
+</section>
+
+<footer class="item4">
+    <footer>
+        &copy; <span id="currentdate"></span>| Christian Nibarger |<a href="https://developer.mozilla.org/en-US/"> MDN Documentation site</a>| Last Modified: <span id="lastMod"></span>
+    </footer>
+    <script src="/js/currentdate.js">
+  
+    </script>
+    <script src="/js/lastMod.js"></script>
 </footer>
 </div>
-<script src="/js/script.js"></script>
 </body>
 </html>

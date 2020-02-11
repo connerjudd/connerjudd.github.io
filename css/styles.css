@@ -1,135 +1,71 @@
-body,h1,h2,h3,h4,h5,h6 {
-    font-family: "Lato", sans-serif;
-}
-
-.topmenu {
+nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+    padding: 0; 
+    background-color: black;
+    width: 100%;
 }
-  
-  .topmenu li {
-    float: left;
-}
-  
-  .topmenu li a {
-    display: inline-block;
+
+nav ul li a {
+    display: block;
     color: white;
-    text-align: center;
-    padding: 16px;
+    padding: 8px 16px;
     text-decoration: none;
+    text-align: center;
 }
-  
-  .topmenu li a:hover {
-    background-color: #222;
-}
-  
-  .topmenu li a.active {
+
+nav ul li a:active {
     color: white;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+    color:white;
+}
+
+.active {
     background-color: #4CAF50;
-}
-
-/* Header*/
-
-header {
-    display:flex;
-    flex-direction:row;
-    justify-content: space-evenly;
-    /* Used the -#px to move  */
-    margin-bottom:-400px;
-}
-       
-h1{
-    height:10%;
-    font-size:300%;
-    text-align: center;
-    font-weight: bold;
-    background-color: #111;
     color: white;
-    padding: 50px;
-    width:100%;
-    border:0;
-    margin-top:0;
-    align-items: center;
 }
 
-.lessons {
+h1 {
+    text-align: center;
+    width: 100%;
+}
+
+#headshot {
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+
+section ul {
     list-style-type: none;
-    text-align: left;
-    float:left;
-    font-size: 30px;
-    text-align: left;
-    padding: 0;
+    margin: 0;
+    padding: 0; 
+    width: 100%;
 }
 
-.content {
-    font-size: 45px;
-}
-a:link {
-    color:black;
-}
-
-a:visited {
-    color:black;
-}
-
-a:hover {
-    color:grey;
-}
-
-a:active {
-    color: yellow;
-}
-
-.mdnSite:link {
-    color:white;
-}
-
-.mdnSite:visited {
-    color:white;
-}
-
-.mdnSite:hover {
-    color:grey
-}
-
-.mdnSite:active{
-    color:white
-}
-
-/* headshot image */
-
-.photo img {
-    float: right;
-    overflow: auto; 
-    height: 600px;
-    width: 400px;
-    background-color: #111;
-    clear: both;
-    right: 300px;
-    border-style:solid;
-    border-color:#111;
-    border-width: medium;
-}
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-footer { 
-    float:none;
-    background-color: #111;
+section ul li a{
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
     text-align: center;
-    padding: 10px;
-    color: white;
-    border-bottom: 10px solid #;
-    margin-top:10%;
 }
 
-/*This is the CSS for the Design Page*/
+section ul li a:active {
+    color: black;
+}
 
+footer {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+}
 
 

@@ -1,0 +1,21 @@
+@media only screen and (min-width:50em) {
+    nav ul {
+        overflow:hidden;
+        width: 100%;
+    }
+    
+    nav ul li a {
+        float: left;
+        text-align: center;
+    }
+
+    
+h2 {
+    text-align: left;
+}
+    
+    section ul li a{
+        text-align: left;
+    }
+    
+}
