@@ -1,15 +1,3 @@
-
-#grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    grid-column-gap: 50px;
-    
-}
-
-
-
 #grid-nav nav ul {
     list-style-type: none;
     margin: 0;
@@ -43,7 +31,7 @@
 }
 
 #grid-header {
-    margin: auto;
+    grid-column: 1 / 4;
     text-align: center;
 }
 
@@ -80,7 +68,7 @@
 }
 
 
-.grid-content{ 
+.grid-content {
     text-align: center;
 }
 

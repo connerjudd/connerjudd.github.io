@@ -2,13 +2,12 @@
 #grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    grid-column-gap: 50px;
-    
+    grid-template-rows: auto auto auto auto auto auto;
 }
 
-
+#grid-nav {
+    grid-column: 1 / 4;
+}
 
 #grid-nav nav ul {
     list-style-type: none;
@@ -43,7 +42,7 @@
 }
 
 #grid-header {
-    margin: auto;
+    grid-column: 1 / 4;
     text-align: center;
 }
 
@@ -80,11 +79,26 @@
 }
 
 
-.grid-content{ 
+#grid-background {
+    grid-column: 1 / 4;
+    background-color:yellow;
+    text-align: center;
+}
+
+#grid-text {
+    grid-column: 1 / 4;
+    background-color: purple;
+    text-align: center;
+}
+
+#grid-buttons-links {
+    grid-column: 1 / 4;
+    background-color: green;
     text-align: center;
 }
 
 #grid-footer {
     grid-column: 1 / 4;
+    background-color: pink;
     text-align: center;
 }
