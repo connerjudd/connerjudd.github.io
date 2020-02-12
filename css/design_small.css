@@ -29,10 +29,10 @@ nav ul li a:hover {
     color: white;
 }
 
-#design-header {
+.design-header {
     text-align: center;
     width: 100%;
-    font-size: xx-large;
+    font-size: 3rem;
 }
 
 

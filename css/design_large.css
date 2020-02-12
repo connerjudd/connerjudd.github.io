@@ -44,15 +44,12 @@
     
     
     .design-header {
-        grid-column: 1/4;
-        text-align: center;
-        font-size: xx-large;
-        padding-bottom: 10px;
+       font-size: 3Srem;
     }
     
     .grid-hicks {
         text-align: center;
-        font-size: large;
+        font-size: medium;
     }
     
     #hicksimg {
@@ -61,7 +58,7 @@
     
     .grid-fitts {
         text-align: center;
-        font-size: large;
+        font-size: medium;
     }
     
     #fittsimg {
@@ -70,7 +67,7 @@
     
     .grid-rot {
         text-align: center;
-        font-size: large;
+        font-size: medium;
     }
     
     #rotimg {
