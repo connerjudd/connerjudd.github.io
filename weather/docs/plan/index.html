@@ -4,43 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Weather</title>
+    <title>Forecasts</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="/css/design_mobile.css">
-    <link rel="stylesheet" href="/css/design_large.css">
-    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="/css/forecasts_mobile.css">
+    <link rel="stylesheet" href="#">
 </head>
 <body>
-<div id="wrapper">
-<header id="designheader">
-    <h1 id="site-name">Design Principles</h1>
-</header>
-<nav>
-    <ul class="topmenu">
-        <li><a href="/index.html" class="active">Home</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
-    </ul>
-    </nav>
+<div id="grid-container">
+    <div id="grid-nav">
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/design/index.html">Design Principles</a></li>
+                <li><a class="active" href="/weather/docs/plan/index.html">Local Forecasts</a></li>
+                <li><a href="#">Preston</a></li>
+        
+            </ul>
+        </nav>
+    </div>
+    <div id="grid-header"><h1>Local Forecasts Site Plan</h1></div>
+    <div id="grid-menu">
+        <nav>
+                <ul>
+                    <li id="home"><a class="active" href="/weather/docs/plan/index.html">Home</a></li>
+                    <li id="audience"><a href="/design/index.html">Audience</a></li>
+                    <li id="color"><a href="#">Color</a></li>
+                    <li id="typo"><a href="#">Typography</a></li>
+                </ul>
+            </ul>
+        </nav>
+    </div>
+    <div id="grid-sp">Site Purpose
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis architecto sequi maiores dolore nostrum adipisci velit dolores, quo id, iure, officiis voluptatibus laudantium perferendis debitis aliquam magni error atque assumenda?</p>
+    </div>
+    <div id="grid-sd">Site Domain</div>
+    <div id="grid-sl">Site Logo</div>
+    <div id="grid-footer">
+        <footer>
+            <footer>
+                &copy; 2020 | Conner Judd |<a href="https://developer.mozilla.org/en-US/"> MDN Documentation site</a>| Last Modified: <span id="lastMod"></span>
+            </footer>
+            <script src="/js/currentdate.js">
+          
+            </script>
+            <script src="/js/lastMod.js"></script>
+        </footer>
+    </div>
+    
+   
+
+
 <main>
-    <section id="hickslaw">
-        <h2>Hick's Law</h2>
-        <img id="hicksimg" src="/imges/hicks.jpeg" alt="A mobile screenshot of the Amazon.com home page.">
-        <h3> <a id="amazon-link" href="https://www.amazon.com/">Amazon</a> </h3>
-        <p id="hicks-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. In eligendi aperiam sint exercitationem molestias neque iusto pariatur cumque laborum, similique accusamus, eius consectetur! Dolore cum officiis officia, recusandae sequi veniam?</p>
-    </section>
-    <section>
-        <h2 id="fittslaw">Fitt's Law</h2>
-        <h3>the organization/company name to be used for your example</h3>
-        <h3>the web site address as a external hyperlink</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic ullam suscipit tenetur reprehenderit! Recusandae provident placeat nulla reiciendis obcaecati ad ratione. Placeat tempore eos ea suscipit dolorum repellendus consequatur? Earum.</p>
-    </section>
-    <section>
-        <h2 id="ruleofthirds">Rule of Thirds</h2>
-        <h3>the organization/company name to be used for your example</h3>
-        <h3>the web site address as a external hyperlink</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus maxime vero vitae voluptatibus, quaerat provident assumenda, ab quas dolorem aperiam facere tempora consequuntur molestias? Tempora corporis facilis maiores illo amet!</p>
-    </section>
+
 </main>
 <footer>
 </footer>

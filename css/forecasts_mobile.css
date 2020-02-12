@@ -1,0 +1,100 @@
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+}
+
+#grid-nav {
+    grid-column: 1 / 4;
+}
+
+#grid-nav nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+    background-color: black;
+    width: 100%;
+    box-shadow: 0 2px 15px gray;
+}
+
+#grid-nav nav ul li a {
+    display: block;
+    color: white;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+}
+
+#grid-nav nav ul li a:active {
+    color: white;
+}
+
+#grid-nav nav ul li a:hover {
+    background-color: #333;
+    color:white;
+}
+
+#grid-nav .active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#grid-header {
+    grid-column: 1 / 4;
+    text-align: center;
+}
+
+#grid-menu nav ul {
+    list-style-type: none;
+    margin-top: 50px;
+    padding: 0; 
+    background-color: gray;
+    width: 100%;
+    box-shadow: 0 2px 15px gray;
+}
+
+#grid-menu nav ul li a {
+    display: block;
+    color: white;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+}
+
+#grid-menu nav ul li a:active {
+    color: white;
+}
+
+#grid-menu nav ul li a:hover {
+    background-color: #333;
+    color:white;
+}
+
+#grid-menu .active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+#grid-sp {
+    grid-column: 1 / 4;
+    background-color:yellow;
+}
+
+#grid-sd {
+    grid-column: 1 / 4;
+    background-color: purple;
+}
+
+#grid-sl {
+    grid-column: 1 / 4;
+    background-color: green;
+}
+
+#grid-footer {
+    grid-column: 1 / 4;
+    background-color: pink;
+}

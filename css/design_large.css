@@ -3,7 +3,7 @@
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 75px 50px 1fr 125px;
+        grid-template-rows: 75px 100px 1fr 125px;
     
     }
     
@@ -44,12 +44,13 @@
     
     
     .design-header {
-       font-size: 3Srem;
+        grid-column: 1/4;
+        font-size: 3rem;
     }
     
     .grid-hicks {
         text-align: center;
-        font-size: medium;
+        font-size: large;
     }
     
     #hicksimg {
@@ -58,7 +59,7 @@
     
     .grid-fitts {
         text-align: center;
-        font-size: medium;
+        font-size: large;
     }
     
     #fittsimg {
@@ -67,7 +68,7 @@
     
     .grid-rot {
         text-align: center;
-        font-size: medium;
+        font-size: large;
     }
     
     #rotimg {

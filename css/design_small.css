@@ -1,9 +1,11 @@
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0; 
     background-color: black;
     width: 100%;
+    box-shadow: 0 2px 15px gray;
 }
 
 nav ul li a {
@@ -32,17 +34,19 @@ nav ul li a:hover {
 .design-header {
     text-align: center;
     width: 100%;
-    font-size: 3rem;
+    font-size: xx-large;
 }
 
 
 #hickslaw {
     text-align: center;
     width: 100%;
+    
 }
 
 #hicksimg {
-    width:100%
+    width:100%;
+   
 }
 
 #fittslaw {
@@ -52,6 +56,7 @@ nav ul li a:hover {
 
 #fittsimg {
     width: 100%;
+   
 }
 #rot {
     text-align: center;
@@ -60,6 +65,7 @@ nav ul li a:hover {
 
 #rotimg {
     width: 100%;
+    
 }
 
 footer {
