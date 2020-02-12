@@ -1,0 +1,85 @@
+@media only screen and (min-width:50em) {
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 75px 50px 1fr 125px;
+    
+    }
+    
+    .grid-nav {
+        grid-column: 1/4;
+    }
+    
+    nav ul {
+        overflow: hidden;
+        list-style-type: none;
+        margin: 0;
+        padding: 0; 
+        background-color: black;
+        width: 100%;
+    }
+    
+    nav ul li a {
+        float: left;
+        color: white;
+        padding: 0.75rem;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    nav ul li a:active {
+        color: white;
+    }
+    
+    nav ul li a:hover {
+        background-color: #333;
+        color:white;
+    }
+    
+    .active {
+        background-color: #4CAF50;
+        color: white;
+    }
+    
+    
+    .design-header {
+        grid-column: 1/4;
+        text-align: center;
+        font-size: xx-large;
+        padding-bottom: 10px;
+    }
+    
+    .grid-hicks {
+        text-align: center;
+        font-size: large;
+    }
+    
+    #hicksimg {
+        width: 100%;
+    }
+    
+    .grid-fitts {
+        text-align: center;
+        font-size: large;
+    }
+    
+    #fittsimg {
+        width: 100%;
+    }
+    
+    .grid-rot {
+        text-align: center;
+        font-size: large;
+    }
+    
+    #rotimg {
+        width:100%;
+    }
+    
+    .grid-footer {
+        grid-column: 1/4;
+        text-align: center;
+        margin-top: 100px;
+    }
+}
