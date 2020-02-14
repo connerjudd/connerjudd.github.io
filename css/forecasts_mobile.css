@@ -5,10 +5,9 @@
 #grid-container {
     display: grid;
     grid-template-columns: 1fr;
+    grid-row-gap: 2%;
     margin-top: 100px;
-    margin-bottom: 100px;
-    grid-column-gap: 50px;
-    
+    margin-bottom: 100px; 
 }
 
 
@@ -48,6 +47,8 @@
 #grid-header {
     margin: auto;
     text-align: center;
+    width: 100%;
+    font-size: xx-large;
 }
 
 #grid-menu nav ul {
@@ -77,6 +78,10 @@
     color:white;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+#wrapper {
+    font-family: 'Montserrat', sans-serif;
+}
 #grid-menu .active {
     background-color: #4CAF50;
     color: white;
@@ -85,6 +90,21 @@
 
 .grid-content{ 
     text-align: center;
+    border-style: solid;
+    padding-top: 2%;
+    
+}
+
+#grid-logo {
+    text-align: center;
+    border-style:solid;
+    padding-top: 2%
+
+}
+
+#sitelogo {
+    width:200px;
+    order:2;
 }
 
 #grid-footer {

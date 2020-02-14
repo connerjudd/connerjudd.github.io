@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+#wrapper {
+    font-family: 'Montserrat', sans-serif;
+}
+#grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 2%;
+    margin-top: 100px;
+    margin-bottom: 100px; 
+}
+
 #grid-nav nav ul {
     list-style-type: none;
     margin: 0;
@@ -31,8 +43,10 @@
 }
 
 #grid-header {
-    grid-column: 1 / 4;
+    margin: auto;
     text-align: center;
+    width: 100%;
+    font-size: xx-large;
 }
 
 #grid-menu nav ul {
@@ -69,7 +83,18 @@
 
 
 .grid-content {
+    text-align: left;
+    padding: 2%;
+    border-style: solid;
+
+}
+
+.grid-content h2{
     text-align: center;
+}
+
+.grid-content ul li {
+    list-style-type: ;
 }
 
 #grid-footer {
