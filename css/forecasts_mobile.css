@@ -1,3 +1,6 @@
+#wrapper {
+    min-height: calc(100vh - 70px);
+}
 
 #grid-container {
     display: grid;
@@ -87,4 +90,5 @@
 #grid-footer {
     grid-column: 1 / 4;
     text-align: center;
+    height: 50px;
 }
