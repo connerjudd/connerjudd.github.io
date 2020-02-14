@@ -1,14 +1,4 @@
 
-#grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto auto;
-}
-
-#grid-nav {
-    grid-column: 1 / 4;
-}
-
 #grid-nav nav ul {
     list-style-type: none;
     margin: 0;
@@ -79,26 +69,10 @@
 }
 
 
-#grid-background {
-    grid-column: 1 / 4;
-    background-color:yellow;
-    text-align: center;
-}
-
-#grid-text {
-    grid-column: 1 / 4;
-    background-color: purple;
-    text-align: center;
-}
-
-#grid-buttons-links {
-    grid-column: 1 / 4;
-    background-color: green;
+.grid-content {
     text-align: center;
 }
 
 #grid-footer {
-    grid-column: 1 / 4;
-    background-color: pink;
     text-align: center;
 }
