@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Image Optimization</title>
+  <meta name="Conner Judd" content="Image Optimization">
+  <meta name="description" content="description here">
+  <link rel="stylesheet" href="#" type="text/css">
+  </head>
+  <body>
+      <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="/design/index.html">Design Principles</a></li>
+                <li><a href="/weather/docs/plan/index.html">Local Forecasts</a></li>
+                <li><a href="/weather/locations/preston.html">Preston</a></li>
+                <li><a class="active" href="/weather/docs/weather-images.html">Image Optimization</a></li>
+            </ul>
+        </nav>
+        <h1>Progressive Loading Images</h1>
+      </header>
+      <main>
+        <!--snow image-->
+        <picture>
+            <source media="(max-width: 700px)" srcset="./images/placeholder.jpg" data-src="./images/snow-small.jpg">
+            <source media="(min-width: 700px)" srcset="./images/placeholder.jpg" data-src="./images/snow-large.jpg">
+            <img class="blur" src="./weather-images/placeholder.jpg" alt="snow">
+        </picture>
+       <!--fog image-->
+       <picture>
+        <source media="(max-width: 700px)" srcset="./images/placeholder.jpg" data-src="./images/fog-small.jpg">
+        <source media="(min-width: 700px)" srcset="./images/placeholder.jpg" data-src="./images/fog-large.jpg">
+        <img class="blur" src="./weather-images/placeholder.jpg" alt="fog">
+    </picture>
+         <!--clear image-->
+         <picture>
+            <source media="(max-width: 700px)" srcset="./images/placeholder.jpg" data-src="./images/clear-small.jpg">
+            <source media="(min-width: 700px)" srcset="./images/placeholder.jpg" data-src="./images/clear-large.jpg">
+            <img class="blur" src="./weather-images/placeholder.jpg" alt="clear">
+        </picture>
+        <!--rain image-->
+        <picture>
+            <source media="(max-width: 700px)" srcset="./images/placeholder.jpg" data-src="./images/rain-small.jpg">
+            <source media="(min-width: 700px)" srcset="./images/placeholder.jpg" data-src="./images/rain-large.jpg">
+            <img class="blur" src="./weather-images/placeholder.jpg" alt="rain">
+        </picture>
+      </main>
+      <footer>
+        <footer>
+            &copy; 2020 | Conner Judd |<a href="https://developer.mozilla.org/en-US/"> MDN Documentation site</a>| Last Modified: <span id="lastMod"></span>
+            </footer>
+            <script src="/js/currentdate.js">
+    
+            </script>
+            <script src="/js/lastMod.js"></script>
+      </footer>
+  
+  </body>
+</html>
