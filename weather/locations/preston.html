@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/weather/css/preston-mobile.css">
+    <link rel="icon" href="/imges/favicon.ico" type="image/x-icon">
     
 </head>
 
@@ -28,149 +29,133 @@
                     <li><a href="/weather/docs/plan/index.html">Local Forecasts</a></li>
                     <li><a class="active" href="/weather/preston.html">Preston</a></li>
                     <li><a href="/weather/docs/weather-images.html">Image Optimization</a></li>
+                    
                 </ul>
             </nav>
         </div>
-<main>
-    <div id="grid-item2">
-        <img src="/weather/images/sitelogo.jpg" alt="Logo of a hot chocolate mug.">
-        <header id="header">
-            <h5>The Weather Site</h5>
-            <h6 id="tag-line">Keeping you cozy and warm all year long.</h6>
-        </header>
-    </div>
+    <main>
+        <div id="grid-item2">
+            <img src="/weather/images/sitelogo.jpg" alt="Logo of a hot chocolate mug.">
+            <header id="header">
+                <h5>The Weather Site</h5>
+                <h6 id="tag-line">Keeping you cozy and warm all year long.</h6>
+            </header>
+        </div>
 
 <!-- Location Data -->
 
     <div id="location-data">
     
-        <main class="small-container">
+        <div class="small-container">
             <div id="location-info">
                 <h2 id="location-name">Preston</h2>
                 <p id="gps"><span class="bold">Gps: </span>42.543, 111.5231</p>
-    </div>
+            </div>
+    
+    
 
 <!-- current weather tile -->
 
-    <div id="current-conditions">
-        <section id="weather-temps" class="tile">
-                    <p id="high"><span id="displayedHigh">58</span>&deg;F</p>
-            <h3 id="temp"><span id="displayedTemp">51</span>&deg;F</h3>
-            <p id="low"><span id="displayedLow">34</span>&deg;F</p>
-            <p id="feels-like">Feels Like: <span id="feelTemp">49</span>&deg;F</p>
-            <p id="wind-speed" class="wind"><span id="displayedWind">4.8</span>mph</p>
-            <p id="wind-gusts" class="wind">Gusts: <span id="displayedGusts">8</span>mph</p>
-        </section>
-    </div>
+        <div id="current-conditions">
+            <section>
+                <div class="outer1">
+                    <div class="dial">
+                    <div class="  hand hand-hour"></div>
+                    <div class="hand hand-minute"></div>
+                    <div class="hand hand-second"></div>
+                    <div class="number number1">1</div>
+                    <div class="number number2">2</div>
+                    <div class="number number3">3</div>
+                    <div class="number number4">4</div>
+                    <div class="number number5">5</div>
+                    <div class="number number6">6</div>
+                    <div class="number number7">7</div>
+                    <div class="number number8">8</div>
+                    <div class="number number9">9</div>
+                    <div class="number number10">10</div>
+                    <div class="number number11">11</div>
+                    <div class="number number12">12</div> 
+                    </div>
+                </div>              
+            </section>
+        </div>
 
 <!--Dial for Temperature-->
 
-    <div id="temperatures"> 
-        <section id="temperature" class="tile">
-          <h3>Temperature</h3>
-          <div class="component">
-            <div class="o0 outer"><p>51</p></div>
-            <div class="o1 outer"><p>53</p></div>
-            <div class="o2 outer"><p>55</p></div>
-            <div class="o3 outer"><p>57</p></div>
-            <div class="o4 outer"><p>58</p></div>
-            <div class="o5 outer"><p>57</p></div>
-            <div class="o6 outer"><p>58</p></div>
-            <div class="o7 outer"><p>58</p></div>
-            <div class="o8 outer"><p>55</p></div>
-            <div class="o9 outer"><p>53</p></div>
-            <div class="o10 outer"><p>52</p></div>
-            <div class="inner"></div>
-            <div class="slider i0"></div>
-            <div class="edge1"></div>
-            <div class="edge2"></div>
-            <div class="i0 ib"><p>0</p></div>
-            <div class="i1 ib"><p>1</p></div>
-            <div class="i2 ib"><p>2</p></div>
-            <div class="i3 ib"><p>3</p></div>
-            <div class="i4 ib"><p>4</p></div>
-            <div class="i5 ib"><p>5</p></div>
-            <div class="i6 ib"><p>6</p></div>
-            <div class="i7 ib"><p>7</p></div>
-            <div class="i8 ib"><p>8</p></div>
-            <div class="i9 ib"><p>9</p></div>
-            <div class="i10 ib"><p>10</p></div>
-            <div class="center">&deg;F</div>
-          </div>
-        </section>
-    </div>
+        <div id="temperatures"> 
+            <section>
+            <h3>Temperature</h3>
+                <div class="outer1">
+                    <div class="dial">
+                        <div class="  hand hand-hour"></div>
+                        <div class="hand hand-minute"></div>
+                        <div class="hand hand-second"></div>
+                        <div class="number number1">1</div>
+                        <div class="number number2">2</div>
+                        <div class="number number3">3</div>
+                        <div class="number number4">4</div>
+                        <div class="number number5">5</div>
+                        <div class="number number6">6</div>
+                        <div class="number number7">7</div>
+                        <div class="number number8">8</div>
+                        <div class="number number9">9</div>
+                        <div class="number number10">10</div>
+                        <div class="number number11">11</div>
+                        <div class="number number12">12</div> 
+                    </div>
+                </div>    
+            </section>
+        </div>
 
 <!--Dial for Percipitation-->
             <div id="precipitation">
                 <section id="percipitation" class="tile">
-                  <h3>Percipitation</h3>
-                  <div class="component">
-                    <div class="o0 outer"><p>40</p></div>
-                    <div class="o1 outer"><p>20</p></div>
-                    <div class="o2 outer"><p>20</p></div>
-                    <div class="o3 outer"><p>20</p></div>
-                    <div class="o4 outer"><p>20</p></div>
-                    <div class="o5 outer"><p>10</p></div>
-                    <div class="o6 outer"><p>20</p></div>
-                    <div class="o7 outer"><p>20</p></div>
-                    <div class="o8 outer"><p>30</p></div>
-                    <div class="o9 outer"><p>20</p></div>
-                    <div class="o10 outer"><p>10</p></div>
-                    <div class="inner"></div>
-                    <div class="slider i0"></div>
-                    <div class="edge1"></div>
-                    <div class="edge2"></div>
-                    <div class="i0 ib"><p>0</p></div>
-                    <div class="i1 ib"><p>1</p></div>
-                    <div class="i2 ib"><p>2</p></div>
-                    <div class="i3 ib"><p>3</p></div>
-                    <div class="i4 ib"><p>4</p></div>
-                    <div class="i5 ib"><p>5</p></div>
-                    <div class="i6 ib"><p>6</p></div>
-                    <div class="i7 ib"><p>7</p></div>
-                    <div class="i8 ib"><p>8</p></div>
-                    <div class="i9 ib"><p>9</p></div>
-                    <div class="i10 ib"><p>10</p></div>
-                    <div class="center">&#9730;<span class="small-percent">%</span></div>
-                  </div>
+                    <div class="outer1">
+                        <div class="dial">
+                            <div class="  hand hand-hour"></div>
+                            <div class="hand hand-minute"></div>
+                            <div class="hand hand-second"></div>
+                            <div class="number number1">1</div>
+                            <div class="number number2">2</div>
+                            <div class="number number3">3</div>
+                            <div class="number number4">4</div>
+                            <div class="number number5">5</div>
+                            <div class="number number6">6</div>
+                            <div class="number number7">7</div>
+                            <div class="number number8">8</div>
+                            <div class="number number9">9</div>
+                            <div class="number number10">10</div>
+                            <div class="number number11">11</div>
+                            <div class="number number12">12</div> 
+                        </div>
+                    </div>
                 </section>
             </div>
 
-            <!--Dial for Conditions-->
+ <!--Dial for Conditions-->
 
             <div>
-                <section id="conditions" class="tile">
-                  <h3>Conditions</h3>
-                  <div class="component">
-                    <div class="o0 outer"><p>&#127785;</p></div>
-                    <div class="o1 outer"><p>&#9729;</p></div>
-                    <div class="o2 outer"><p>&#9729;</p></div>
-                    <div class="o3 outer"><p>&#9729;</p></div>
-                    <div class="o4 outer"><p>&#9729;</p></div>
-                    <div class="o5 outer"><p>&#9729;</p></div>
-                    <div class="o6 outer"><p>&#127780;</p></div>
-                    <div class="o7 outer"><p>&#127780;</p></div>
-                    <div class="o8 outer"><p>&#127783;</p></div>
-                    <div class="o9 outer"><p><span class="moon">&#9790;</span>&#9729;</p></div>
-                    <div class="o10 outer"><p><span class="moon">&#9790;</span>&#9729;</p></div>
-                    <div class="inner"></div>
-                    <div class="slider i0"></div>
-                    <div class="edge1"></div>
-                    <div class="edge2"></div>
-                    <div class="i0 ib"><p>0</p></div>
-                    <div class="i1 ib"><p>1</p></div>
-                    <div class="i2 ib"><p>2</p></div>
-                    <div class="i3 ib"><p>3</p></div>
-                    <div class="i4 ib"><p>4</p></div>
-                    <div class="i5 ib"><p>5</p></div>
-                    <div class="i6 ib"><p>6</p></div>
-                    <div class="i7 ib"><p>7</p></div>
-                    <div class="i8 ib"><p>8</p></div>
-                    <div class="i9 ib"><p>9</p></div>
-                    <div class="i10 ib"><p>10</p></div>
-                    <div class="center"></div>
-                  </div>
-                </section></div>
+                <section
+                <div class="outer1">
+                    <div class="dial">
+                        <div class="  hand hand-hour"></div>
+                        <div class="hand hand-minute"></div>
+                        <div class="hand hand-second"></div>
+                        <div class="number number1">1</div>
+                        <div class="number number2">2</div>
+                        <div class="number number3">3</div>
+                        <div class="number number4">4</div>
+                        <div class="number number5">5</div>
+                        <div class="number number6">6</div>
+                        <div class="number number7">7</div>
+                        <div class="number number8">8</div>
+                        <div class="number number9">9</div>
+                        <div class="number number10">10</div>
+                        <div class="number number11">11</div>
+                        <div class="number number12">12</div> 
+                    </div>
+                </div>
+                </section
 
         </main>
     </div>

@@ -7,6 +7,7 @@ html {
     height: 100%;
 }
 
+/* Container for content of the site. */
 
 #grid-container {
     min-height: 100%;
@@ -15,6 +16,7 @@ html {
     grid-template-rows: 1fr auto;
 }
 
+/* navigation bar */
 
 nav ul {
     list-style-type: none;
@@ -47,6 +49,8 @@ nav ul li a:hover {
     background-color: #4CAF50;
     color: white;
 }
+
+/*  */
 
 #grid-item2 {
     Display: grid;
@@ -83,9 +87,90 @@ div #grid-item2 img {
 }
 
 .small-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  background-color: white;
+  
 }
+
+.dial {
+  width: 300px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  border: 2px solid black; 
+  outline: 3px solid black;
+  position: relative;
+}
+
+.dial .number {
+  rotation: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotate(var(--rotation))
+}
+
+.dial .number1 { --rotation: 30deg;}
+.dial .number2 { --rotation: 60deg;}
+.dial .number3 { --rotation: 90deg;}
+.dial .number4 { --rotation: 120deg;}
+.dial .number5 { --rotation: 150deg;}
+.dial .number6 { --rotation: 180deg;}
+.dial .number7 { --rotation: 210deg;}
+.dial .number8 { --rotation: 240deg;}
+.dial .number9 { --rotation: 270deg;}
+.dial .number10 { --rotation: 300deg;}
+.dial .number11{ --rotation: 330deg;}
+.dial .number12 { --rotation: 360deg;}
+
+.dial .hand {
+  --rotation: 0;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  background-color: black;
+  transform-origin: bottom; 
+  transform: translateX(-50%) rotate(var(--rotation));
+  border: 1px solid white; 
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  z-index: 10;
+}
+
+.dial::after {
+  content: '';
+  position: absolute;
+  border: 2px solid black;
+  background-color: white;
+  z-index: 11;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.dial .hand-second {
+  width: 3px;
+  height: 45%;
+  background-color: red;
+}
+
+.dial .hand-minute {
+  width: 7px;
+  height: 40%;
+  background-color: black;
+}
+
+.dial .hand-hour {
+  width: 10px;
+  height: 35%;
+  background-color: black;
+}
+
 
 
 
@@ -96,43 +181,21 @@ div #grid-item2 img {
 }
 
 #current-conditions {
-    border-style: solid;
-    border-width: 3px;
-    border-radius: .5em;
-    margin: 10px 10px 10px 10px;
-    padding: auto;
-    background-color: #111;
-    color: white;
+    
 }
 
+
+
 #temperatures {
-    border-style: solid;
-    border-width: 3px;
-    border-radius: .5em;
-    margin: 10px 10px 10px 10px;
-    padding: auto;
-    background-color: #111;
-    color: white;
+  
 }
 
 #precipitation {
-    border-style: solid;
-    border-width: 3px;
-    border-radius: .5em;
-    margin: 10px 10px 10px 10px;
-    padding: auto;
-    background-color: #111;
-    color: white;
+  
 }
 
 #conditions {
-    border-style: solid;
-    border-width: 3px;
-    border-radius: .5em;
-    margin: 10px 10px 10px 10px;
-    padding: auto; 
-    background-color: #111;
-    color: white; 
+  
 }
 
 #grid-item4 {
