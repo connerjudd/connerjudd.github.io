@@ -7,7 +7,8 @@
     <title>Image Optimization</title>
   <meta name="Conner Judd" content="Image Optimization">
   <meta name="description" content="description here">
-  <link rel="stylesheet" href="#" type="text/css">
+  <link rel="stylesheet" href="/weather/docs/weather-images-mobli.css" type="text/css">
+  <link rel="stylesheet" href="/weather/docs/weather-images-large.css" type="text/css">
   <link rel="icon" href="/imges/favicon.ico" type="image/x-icon">
   </head>
   <body>
@@ -19,46 +20,54 @@
                 <li><a href="/weather/docs/plan/index.html">Local Forecasts</a></li>
                 <li><a href="/weather/locations/preston.html">Preston</a></li>
                 <li><a class="active" href="/weather/docs/weather-images.html">Image Optimization</a></li>
-            </ul>
-            
+            </ul>  
         </nav>
-        <h1>Progressive Loading Images</h1>
       </header>
+      <h1>Progressive Loading Images</h1>
       <main>
         <!--snow image-->
-        <picture>
-            <source media="(max-width: 700px)" srcset="./images/placeholder.jpg" data-src="./images/snow-small.jpg">
-            <source media="(min-width: 700px)" srcset="./images/placeholder.jpg" data-src="./images/snow-large.jpg">
-            <img class="blur" src="./weather-images/placeholder.jpg" alt="snow">
-        </picture>
+      <picture>
+            <source media="(max-width: 700px)" srcset="/weather/docs/weather-images/placeholder.jpg" data-src="/weather/docs/weather-images/snow-small.jpg">
+            <source media="(min-width: 700px)" srcset="/weather/docs/weather-images/placeholder.jpg" data-src="/weather/docs/weather-images/snow-large.jpg">
+            <img class="blur" src="/weather/docs/weather-images/placeholder.jpg" alt="snow">
+      </picture>
        <!--fog image-->
-       <picture>
-        <source media="(max-width: 700px)" srcset="./images/placeholder.jpg" data-src="./images/fog-small.jpg">
-        <source media="(min-width: 700px)" srcset="./images/placeholder.jpg" data-src="./images/fog-large.jpg">
-        <img class="blur" src="./weather-images/placeholder.jpg" alt="fog">
-    </picture>
+      <picture>
+        <source media="(max-width: 700px)" srcset="/weather/docs/weather-images/placeholder.jpg" data-src="/weather/docs/weather-images/fog-small.jpg">
+        <source media="(min-width: 700px)" srcset="/weather/docs/weather-images/placeholder.jpg" data-src="/weather/docs/weather-images/fog-large.jpg">
+        <img class="blur" src="/weather/docs/weather-images/placeholder.jpg" alt="fog">
+      </picture>
          <!--clear image-->
-         <picture>
-            <source media="(max-width: 700px)" srcset="./images/placeholder.jpg" data-src="./images/clear-small.jpg">
-            <source media="(min-width: 700px)" srcset="./images/placeholder.jpg" data-src="./images/clear-large.jpg">
-            <img class="blur" src="./weather-images/placeholder.jpg" alt="clear">
-        </picture>
+      <picture>
+            <source media="(max-width: 700px)" srcset="/weather/docs/weather-images/placeholder.jpg" data-src="/weather/docs/weather-images/clear-small.jpg">
+            <source media="(min-width: 700px)" srcset="/weather/docs/weather-images/placeholder.jpg" data-src="/weather/docs/weather-images/clear-large.jpg">
+            <img class="blur" src="/weather/docs/weather-images/placeholder.jpg" alt="clear">
+      </picture>
         <!--rain image-->
-        <picture>
-            <source media="(max-width: 700px)" srcset="./images/placeholder.jpg" data-src="./images/rain-small.jpg">
-            <source media="(min-width: 700px)" srcset="./images/placeholder.jpg" data-src="./images/rain-large.jpg">
-            <img class="blur" src="./weather-images/placeholder.jpg" alt="rain">
-        </picture>
+      <picture>
+            <source media="(max-width: 700px)" srcset="/weather/docs/weather-images/placeholder.jpg" data-src="/weather/docs/weather-images/rain-small.jpg">
+            <source media="(min-width: 700px)" srcset="/weather/docs/weather-images/placeholder.jpg" data-src="/weather/docs/weather-images/rain-large.jpg">
+            <img class="blur" src="/weather/docs/weather-images/placeholder.jpg" alt="rain">
+      </picture>
       </main>
       <footer>
         <footer>
-            &copy; 2020 | Conner Judd |<a href="https://developer.mozilla.org/en-US/"> MDN Documentation site</a>| Last Modified: <span id="lastMod"></span>
+            &copy; 2020 | Conner Judd |<a id="mdn" href="https://developer.mozilla.org/en-US/"> MDN Documentation site</a>| Last Modified: <span id="lastMod"></span>
             </footer>
             <script src="/js/currentdate.js">
     
             </script>
             <script src="/js/lastMod.js"></script>
       </footer>
-  
+      <script src="/weather/js/functions.js" defer></script>
+      
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+      </script>
+      <script>
+        WebFont.load({google: {families: ['Montserrat']}});
+      </script>
+      
   </body>
 </html>
