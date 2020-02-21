@@ -3,13 +3,30 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-#grid-container-typo {
+/* items that effect the entire page.  */
+
+#wrapper {
+    min-height: calc(100vh - 70px);
+}
+
+/* container to place the main focus of the page into a grid  */
+
+#grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-row-gap: 2%;
-    margin-top: 100px;
-    margin-bottom: 100px; 
+    margin-top: 10%;
+    margin-bottom: 10%; 
 }
+
+#grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+}
+
+/* the navigation bar  */
 
 #grid-nav nav ul {
     list-style-type: none;
@@ -18,7 +35,6 @@
     background-color: black;
     width: 100%;
     box-shadow: 0 2px 15px gray;
-    
 }
 
 #grid-nav nav ul li a {
@@ -44,15 +60,20 @@
     color: white;
 }
 
-#grid-header {
-    margin: auto;
+/* all of the titles in the h1 position  */
+
+h1 {
     text-align: center;
     width: 100%;
-    font-size: xx-large;
+    font-size: 5em;
 }
+
+
+/* site plan menu  */
+
+
 #grid-menu nav ul {
     list-style-type: none;
-    margin-top: 50px;
     padding: 0; 
     background-color: gray;
     width: 100%;
@@ -82,15 +103,39 @@
     color: white;
 }
 
-.grid-content {
+/* format the content of each page  */
+
+.grid-content { 
     text-align: center;
-    padding: 2%;
+    padding-top: 2%;
     border-style: solid;
+    font-size: 2em;
+    margin-top: 5%;
+
 }
 
-.grid-content h2{
-    text-align: center;
+.grid-content ul li {
+    list-style-type: none;
 }
+
+.grid-content a {
+    color: black;
+}
+
+
+#sitelogo {
+    width:200px;
+    order:2;
+}
+
+/* the footer  */
+
 #grid-footer {
+    margin-top: 10%;
     text-align: center;
+    height: 50px;
+}
+
+#grid-footer a {
+    color: black;
 }
