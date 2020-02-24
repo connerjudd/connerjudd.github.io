@@ -5,6 +5,7 @@
 
 html {
     height: 100%;
+    box-sizing: border-box;
 }
 
 /* Container for content of the site. */
@@ -12,13 +13,12 @@ html {
 #grid-container {
     min-height: 100%;
     display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr;
 }
 
 /* navigation bar */
 
-nav ul {
+/* nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0; 
@@ -48,7 +48,7 @@ nav ul li a:hover {
 .active {
     background-color: #4CAF50;
     color: white;
-}
+} */
 
 /*  */
 
@@ -90,112 +90,175 @@ div #grid-item2 img {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   background-color: white;
+  border: 3px solid black;
+  
   
 }
 
-.dial {
-  width: 300px;
-  height: 300px;
-  background-color: rgba(255, 255, 255, 1);
-  border-radius: 50%;
-  border: 2px solid black; 
-  outline: 3px solid black;
-  position: relative;
+#location-info {
+  border-radius: .5em;
+  margin: 10px 10px 10px 10px;
+  padding: auto;
 }
 
-.dial .number {
-  rotation: 0;
+#current-conditions {
+  border: 3px solid black;
+}
+
+#temp-actual {
+  font-size: 4em;
+  text-align: center;
+  margin-bottom: -10px;
+
+}
+
+#temp-hi {
+  display: inline;
+  font-size: 2em;
+  color: red;
+  text-align:center;
+  margin-left: 35%;
+}
+
+#temp-lo {
+  display: inline;
+  font-size: 2em;
+  color: blue;
+  text-align:center;
+  
+}
+div p img {
+  width: 20px;
+  height: 20px;
+}
+
+#wind-speed {
+  font-size: 1em;
+  text-align:center;
+  margin: 0;
+}
+
+#current-temp {
+  border: 3px solid black;
+  text-align: center;
+  margin: auto;
+}
+
+#current-temp p {
+  font-size: 2em;
+}
+
+#current-temp section {
+  margin: auto;
+}
+.clock{
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: relative;
+  margin: auto;
+}
+
+.clock2 {
+  width: 250px;
+  height: 250px;
+  background-color: black;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: relative;
+  top: 8%;
+  left:8%;
+}
+
+.clock .number {
+  --rotation: 0;
   position: absolute;
   width: 100%;
   height: 100%;
   text-align: center;
-  transform: rotate(var(--rotation))
+  transform: rotate(var(--rotation));
+  color: white;
 }
 
-.dial .number1 { --rotation: 30deg;}
-.dial .number2 { --rotation: 60deg;}
-.dial .number3 { --rotation: 90deg;}
-.dial .number4 { --rotation: 120deg;}
-.dial .number5 { --rotation: 150deg;}
-.dial .number6 { --rotation: 180deg;}
-.dial .number7 { --rotation: 210deg;}
-.dial .number8 { --rotation: 240deg;}
-.dial .number9 { --rotation: 270deg;}
-.dial .number10 { --rotation: 300deg;}
-.dial .number11{ --rotation: 330deg;}
-.dial .number12 { --rotation: 360deg;}
+.clock .number1 { --rotation: 30deg; }
+.clock .number2 { --rotation: 60deg; }
+.clock .number3 { --rotation: 90deg; }
+.clock .number4 { --rotation: 120deg; }
+.clock .number5 { --rotation: 150deg; }
+.clock .number6 { --rotation: 180deg; }
+.clock .number7 { --rotation: 210deg; }
+.clock .number8 { --rotation: 240deg; }
+.clock .number9 { --rotation: 270deg; }
+.clock .number10 { --rotation: 300deg; }
+.clock .number11 { --rotation: 330deg; }
 
-.dial .hand {
+.clock .temp {
   --rotation: 0;
   position: absolute;
-  bottom: 50%;
-  left: 50%;
-  background-color: black;
-  transform-origin: bottom; 
-  transform: translateX(-50%) rotate(var(--rotation));
-  border: 1px solid white; 
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  z-index: 10;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotate(var(--rotation));
+  color: white;
+ 
 }
 
-.dial::after {
-  content: '';
+.clock .temp1 {--rotation: 30deg;}
+.clock .temp2 {--rotation: 60deg;}
+.clock .temp3 {--rotation: 90deg;}
+.clock .temp4 {--rotation: 120deg;}
+.clock .temp5 {--rotation: 150deg;}
+.clock .temp6 {--rotation: 180deg;}
+.clock .temp7 {--rotation: 210deg;}
+.clock .temp8 {--rotation: 240deg;}
+.clock .temp9 {--rotation: 270deg;}
+.clock .temp10 {--rotation: 300deg;}
+.clock .temp11 {--rotation: 330deg;}
+
+.center-dial {
   position: absolute;
-  border: 2px solid black;
+  top: 30%;
+  left: 30%;
+  width: 100px;
+  height: 100px;
+  border: 2px solid white;
+  border-radius: 50%;
   background-color: white;
-  z-index: 11;
+}
+
+.center-dial p {
+  position: absolute;
+  left: 20%;
+  font-size: 2em;
+  color: black;
+}
+
+.red-dot {
+  position: absolute;
+  border: 3px solid red;
+  border-radius: 50%;
   width: 30px;
   height: 30px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
+  top: -85%;
+  left: 30%;
 }
 
-.dial .hand-second {
-  width: 3px;
-  height: 45%;
-  background-color: red;
+#current-precip {
+  border: 3px solid black;
 }
 
-.dial .hand-minute {
-  width: 7px;
-  height: 40%;
-  background-color: black;
-}
-
-.dial .hand-hour {
-  width: 10px;
-  height: 35%;
-  background-color: black;
-}
-
-
-
-
-#location-info {
-    border-radius: .5em;
-    margin: 10px 10px 10px 10px;
-    padding: auto;
-}
-
-#current-conditions {
-    
-}
-
-
-
-#temperatures {
-  
-}
-
-#precipitation {
-  
+#current-precip .center-dial img {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 16.5%;
+  left: 16.5%;
 }
 
 #conditions {
-  
+  border: 3px solid black;
 }
 
 #grid-item4 {
