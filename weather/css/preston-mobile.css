@@ -86,29 +86,29 @@ div #grid-item2 img {
     border-width: 5px;
 }
 
-.small-container {
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  background-color: white;
-  border: 3px solid black;
-  
-  
+#location-info {
+  border: 1px solid black;
 }
 
-#location-info {
-  border-radius: .5em;
-  margin: 10px 10px 10px 10px;
-  padding: auto;
+.small-container {  
+  background-color: white;
+  border: 2px solid black;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  box-shadow: 0 2px 15px gray;
 }
 
 #current-conditions {
   border: 3px solid black;
+  border-radius: 10px;
+  margin: 5% 5% 5% 5%;
+  box-shadow: 0 2px 15px gray;
 }
 
 #temp-actual {
   font-size: 4em;
   text-align: center;
-  margin-bottom: -10px;
 
 }
 
@@ -140,8 +140,10 @@ div p img {
 
 #current-temp {
   border: 3px solid black;
+  border-radius: 10px;
   text-align: center;
-  margin: auto;
+  margin: 5% 5% 5% 5%;
+  box-shadow: 0 2px 15px gray;
 }
 
 #current-temp p {
@@ -247,6 +249,14 @@ div p img {
 
 #current-precip {
   border: 3px solid black;
+  border-radius: 10px;
+  margin: 5% 5% 5% 5%;
+  box-shadow: 0 2px 15px gray;
+}
+
+#current-precip p {
+  font-size: 2em;
+  text-align: center;
 }
 
 #current-precip .center-dial img {
@@ -259,6 +269,39 @@ div p img {
 
 #conditions {
   border: 3px solid black;
+  border-radius: 10px;
+  margin: 5% 5% 5% 5%;
+  box-shadow: 0 2px 15px gray;
+}
+
+#conditions p {
+  font-size: 2em;
+  text-align: center;
+}
+
+#conditions .component .clock #rain-cloud {
+  width: 40px;
+  height: 25px;
+}
+
+#conditions .component .clock #snow {
+  width: 40px;
+  height: 25px;
+}
+
+#conditions .component .clock #cloud {
+  width: 40px;
+  height: 25px;
+}
+
+#conditions .component .clock #overcast {
+  width: 40px;
+  height: 25px;
+}
+
+#conditions .component .clock #sun {
+  width: 40px;
+  height: 25px;
 }
 
 #grid-item4 {

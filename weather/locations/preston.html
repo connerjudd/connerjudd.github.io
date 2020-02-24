@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/weather/css/preston-mobile.css">
+    <link rel="stylesheet" href="/weather/css/preston-large.css">
     <link rel="icon" href="/imges/favicon.ico" type="image/x-icon">
     
 </head>
@@ -21,8 +22,8 @@
 
 <div id="wrapper">
     <div id="grid-container">
-        <!-- <div id="grid-item1">
-            <nav>
+        <div id="grid-item1">
+            <!-- <nav>
                 <ul>
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="/design/index.html">Design Principles</a></li>
@@ -31,8 +32,8 @@
                     <li><a href="/weather/docs/weather-images.html">Image Optimization</a></li>
                     
                 </ul>
-            </nav>
-        </div> -->
+            </nav> -->
+        </div>
     <main>
         <div id="grid-item2">
             <img src="/weather/images/sitelogo.jpg" alt="Logo of a hot chocolate mug.">
@@ -42,16 +43,17 @@
             </header>
         </div>
 
+        <!-- location info  -->
+
+        <div id="location-info">
+            <h2 id="location-name">Preston</h2>
+            <p id="gps"><span class="bold">Gps: </span>42.543, 111.5231</p>
+        </div>
+
         <!-- container for the content  -->
     
         <div class="small-container">
-            <!-- location info  -->
-
-            <div id="location-info">
-                <h2 id="location-name">Preston</h2>
-                <p id="gps"><span class="bold">Gps: </span>42.543, 111.5231</p>
-            </div>
-
+            
             <!-- current weather conditions component  -->
             
             <div id="current-conditions">
@@ -109,48 +111,107 @@
 
             <div id="current-precip">
                 
-<section><strong>Temperature</strong>
-    <div class="component">
-      <div class="clock">
-        <div class="temp temp1">40</div>
-        <div class="temp temp2">20</div>
-        <div class="temp temp3">20</div>
-        <div class="temp temp4">20</div>
-        <div class="temp temp5">20</div>
-        <div class="temp temp6">10</div>
-        <div class="temp temp7">20</div>
-        <div class="temp temp8">20</div>
-        <div class="temp temp9">30</div>
-        <div class="temp temp10">20</div>
-        <div class="temp temp11">10</div>
-        <div class="temp temp12">20</div>
-        <div class="clock2">
-        <div class="number number1">1</div>
-            <div class="number number2">2</div>
-            <div class="number number3">3</div>
-            <div class="number number4">4</div>
-            <div class="number number5">5</div>
-            <div class="number number6">6</div>
-            <div class="number number7">7</div>
-            <div class="number number8">8</div>
-            <div class="number number9">9</div>
-            <div class="number number10">10</div>
-            <div class="number number11">11</div>
-            <div class="number number12">12</div>
-          <div class="center-dial">
-              <img id="umbrella" src="/weather/images/umbrella.jpg" alt="black umbrella icon">
-          </dial>
-          <div class="red-dot">
-          </div>
-        </div>
-    </div>
-</section>
+                <section>
+                    <p><strong>Precipitation</strong></p>
+                    <div class="component">
+                        <div class="clock">
+                        <div class="temp temp1">40</div>
+                        <div class="temp temp2">20</div>
+                        <div class="temp temp3">20</div>
+                        <div class="temp temp4">20</div>
+                        <div class="temp temp5">20</div>
+                        <div class="temp temp6">10</div>
+                        <div class="temp temp7">20</div>
+                        <div class="temp temp8">20</div>
+                        <div class="temp temp9">30</div>
+                        <div class="temp temp10">20</div>
+                        <div class="temp temp11">10</div>
+                        <div class="temp temp12">20</div>
+                        <div class="clock2">
+                        <div class="number number1">1</div>
+                            <div class="number number2">2</div>
+                            <div class="number number3">3</div>
+                            <div class="number number4">4</div>
+                            <div class="number number5">5</div>
+                            <div class="number number6">6</div>
+                            <div class="number number7">7</div>
+                            <div class="number number8">8</div>
+                            <div class="number number9">9</div>
+                            <div class="number number10">10</div>
+                            <div class="number number11">11</div>
+                            <div class="number number12">12</div>
+                            <div class="center-dial">
+                                <img id="umbrella" src="/weather/images/umbrella.jpg" alt="black umbrella icon">%
+                            </dial>
+                            <div class="red-dot">
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
             </div>
 
             <!-- the conditions component -->
             <div id="conditions">
-                4
+                <section>
+                    <p><strong>Conditions</strong></p>
+                    <div class="component">
+                    <div class="clock">
+                        <div class="temp temp1">
+                            <img id="rain-cloud" src="/weather/images/rain-icon.jpg" alt="cloud raining">
+                        </div>
+                        <div class="temp temp2">
+                            <img src="/weather/images/snow-icon.jpg" alt="cloud snowing" id="snow">
+                        </div>
+                        <div class="temp temp3">
+                            <img src="/weather/images/cloudy-icon.jpg" alt="cloud" id="cloud">
+                        </div>
+                        <div class="temp temp4">
+                            <img src="/weather/images/cloudy-icon.jpg" alt="cloud" id="cloud">
+                        </div>
+                        <div class="temp temp5">
+                            <img src="/weather/images/cloudy-icon.jpg" alt="cloud" id="cloud">
+                        </div>
+                        <div class="temp temp6">
+                            <img src="/weather/images/cloudy-icon.jpg" alt="cloud" id="cloud">
+                        </div>
+                        <div class="temp temp7">
+                            <img src="/weather/images/overcast-icon.jpg" alt="sun overcast with clouds" id="overcast">
+                        </div>
+                        <div class="temp temp8"> 
+                            <img src="/weather/images/overcast-icon.jpg" alt="sun overcast with clouds" id="overcast">
+                        </div>
+                        <div class="temp temp9">
+                            <img src="/weather/images/overcast-icon.jpg" alt="sun overcast with clouds" id="overcast">
+                        </div>
+                        <div class="temp temp10">
+                            <img src="/weather/images/sun-icon.jpg" alt="the sun" id="sun">
+                        </div>
+                        <div class="temp temp11">
+                            <img src="/weather/images/sun-icon.jpg" alt="the sun" id="sun">
+                        </div>
+                        <div class="temp temp12">
+                            <img src="/weather/images/sun-icon.jpg" alt="the sun" id="sun">
+                        </div>
+                            <div class="clock2">
+                                <div class="number number1">1</div>
+                                <div class="number number2">2</div>
+                                <div class="number number3">3</div>
+                                <div class="number number4">4</div>
+                                <div class="number number5">5</div>
+                                <div class="number number6">6</div>
+                                <div class="number number7">7</div>
+                                <div class="number number8">8</div>
+                                <div class="number number9">9</div>
+                                <div class="number number10">10</div>
+                                <div class="number number11">11</div>
+                                <div class="number number12">12</div>
+                                <div class="center-dial"><p>51&deg;F</p></dial>
+                                <div class="red-dot">
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
        </div>
     </main>
@@ -169,7 +230,7 @@
 
 <div id="menu">
   <ul>
-    <li><a href="#home">Home</a></li>
+    <li><a href="/index.html">Home</a></li>
     <li><a href="#about">Preston</a></li>
     <li><a href="#contact">Soda Springs</a></li>
     <li><a href="#contact">Favorites</a></li>
