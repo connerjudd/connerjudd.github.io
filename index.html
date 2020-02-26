@@ -18,7 +18,7 @@
 <div id="wrapper">
     <nav>
         <ul>
-            <li><a class="active" href="#">Home</a></li>
+            <li><a class="active" href="/index.html">Home</a></li>
             <li><a href="/design/index.html">Design Principles</a></li>
             <li><a href="/weather/docs/plan/index.html">Local Forecasts</a></li>
             <li><a href="/weather/locations/preston.html">Preston</a></li>
@@ -44,12 +44,14 @@
 
             <footer class="item4">
                 <footer>
-                &copy; 2020 | Conner Judd |<a href="https://developer.mozilla.org/en-US/"> MDN Documentation site</a>| Last Modified: <span id="lastMod"></span>
+                <p onload = "setDate()">     
+                Current Date: <span id="date"></span> | Conner Judd |<a href="https://developer.mozilla.org/en-US/"> MDN Documentation site</a>| Last Modified: <span id="lastMod"></span>
+                </p>
                 </footer>
-                <script src="/js/currentdate.js">
+                <script src="/weather/js/functions.js">
         
                 </script>
-                <script src="/js/lastMod.js"></script>
+                <script src="/weather/js/functions.js"></script>
             </footer>
     </div>
 </div>

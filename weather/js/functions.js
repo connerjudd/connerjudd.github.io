@@ -1,4 +1,34 @@
-//grab all sorces with atribute data-src
+'use strict';
+
+
+//  Weather Site Javascript Functions 
+document.addEventListener("DOMContentLoaded", function(){
+    // Call the modified functions
+
+});
+
+console.log('My javascript is being read.');
+
+
+
+// current date function for the footer
+
+function setDate(){
+  document.getElementById('date').innerHTML=Date();
+}
+
+// the last modified function for the footer
+
+
+const modOptions = {weekdays: 'long', day: 'numeric', month: 'long', year: 'numeric'};
+document.getElementById('lastMod').textContent = new Date(document.lastModified).toLocaleDateString('en-US', modOptions);
+
+
+
+
+// LAZY LOADING FOR IMAGE OPTIMIZATION
+
+//grab all sources with atribute data-src
 let imagesToLoad = document.querySelectorAll('source[data-src]');
 
 const loadImages = (image) => {
