@@ -16,42 +16,6 @@ html {
     grid-template-columns: 1fr;
 }
 
-/* navigation bar */
-
-/* nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0; 
-    background-color: black;
-    width: 100%;
-    box-shadow: 0 2px 15px gray;
-}
-
-nav ul li a {
-    display: block;
-    color: white;
-    padding: 0.75rem;
-    text-decoration: none;
-    text-align: center;
-    font-size: large;
-}
-
-nav ul li a:active {
-    color: white;
-}
-
-nav ul li a:hover {
-    background-color: #333;
-    color:white;
-}
-
-.active {
-    background-color: #4CAF50;
-    color: white;
-} */
-
-/*  */
-
 #grid-item2 {
     Display: grid;
     grid-template-columns: 50px 1fr;
@@ -93,13 +57,38 @@ div #grid-item2 img {
   padding: 10px;
 }
 
-.small-container {  
-  background-color: white;
+.small-container { 
+  background-size: cover; 
+  background-repeat: no-repeat;
   border: 2px solid black;
   margin-top: 1%;
   margin-left: 1%;
   margin-right: 1%;
   box-shadow: 0 2px 15px gray;
+}
+
+.clear {
+  background-image: url(/weather/docs/weather-images/clear-small.jpg)
+}
+
+.clouds {
+  background-image: url(/weather/docs/weather-images/clouds-small.jpg)
+}
+
+.fog {
+  background-image: url(/weather/docs/weather-images/fog-small.jpg)
+}
+
+.rain {
+  background-image: url(/weather/docs/weather-images/rain-small.jpg)
+}
+
+.snow {
+  background-image: url(/weather/docs/weather-images/snow-small.jpg)
+}
+
+.component {
+  width: auto;
 }
 /* current conditions */
 
@@ -113,6 +102,16 @@ div #grid-item2 img {
 #temp-actual {
   font-size: 4em;
   text-align: center;
+}
+
+#feel {
+  text-align: center;
+  font-size: 1em;
+}
+
+#feelTemp {
+  text-align: center;
+  font-size: 1em;
 }
 
 #temp-hi {
@@ -154,10 +153,11 @@ div p img {
 
 #current-temp section {
   margin: auto;
+  width: 100%;
 }
 .clock{
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   background-color: black;
   border-radius: 50%;
   border: 2px solid white;
@@ -166,14 +166,14 @@ div p img {
 }
 
 .clock2 {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   background-color: black;
   border-radius: 50%;
   border: 2px solid white;
   position: relative;
-  top: 8%;
-  left:8%;
+  top: 9%;
+  left:8.8%;
 }
 
 .clock .number {
@@ -223,13 +223,43 @@ div p img {
 
 .center-dial {
   position: absolute;
-  top: 30%;
-  left: 30%;
+  top: 25%;
+  left: 24%;
   width: 100px;
   height: 100px;
   border: 2px solid white;
   border-radius: 50%;
   background-color: white;
+  z-index: 11;
+}
+
+.clock2 .hand {
+  --rotation: 0;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  border: 2px solid white;
+  transform-origin: bottom;
+  z-index: 10;
+  transform: translate(-50%) rotate(calc(var(--rotation) * 1deg));
+}
+
+.clock2 .hand.second {
+  width: 1px;
+  height: 48%;
+  background-color: red;
+}
+
+.clock2 .hand.minute {
+  width: 5px;
+  height: 45%;
+  background-color: black;
+} 
+
+.clock2 .hand.hour {
+  width: 5px;
+  height: 40%;
+  background-color: black;
 }
 
 .center-dial p {
@@ -239,15 +269,6 @@ div p img {
   color: black;
 }
 
-.red-dot {
-  position: absolute;
-  border: 3px solid red;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  top: -85%;
-  left: 30%;
-}
 
 /* current precipitation */
 

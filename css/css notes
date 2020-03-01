@@ -1,0 +1,26 @@
+Flexbox Rules
+
+justify-content: 
+
+aligns items horizontally and accepts the following rules:
+
+- flex-start: items align to the left side of the container
+- flex-end: items align to the right side of the container
+- center: items align at the center of the container
+- space-between: items display with equal spacing between them
+- space-around: items display with equal spacing around them
+
+align-items:
+
+aligns items vertically and accepts the following values:
+
+- flex-start: items align to the top of the container
+- flex-end: items align to the bottom of the container
+- center: items align at the vertical center of the container
+- baseline: items display at the baseline of the container
+- stretch: items are stretch to fit the container
+
+flex-direction:
+
+defines items
+

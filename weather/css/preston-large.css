@@ -1,18 +1,121 @@
 @media only screen and (min-width:50em) { 
-   .small-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    background-color: white;
-    border: 2px solid black;
-    margin-top: 2%;
-    margin-left: 5%;
-    margin-right: 5%;
+
+    /* The main grid */
+
+   #grid-container{
+       margin: 5% 5% 5% 5%;
    }
 
+   /* the site logo */
+
+   div #grid-item2 img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: -100%;
+    margin-left: 50%;
+   }
+
+   /* the grid to control the content of the site */
+
+    .small-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        background-color: white;
+        border: 2px solid black;
+        margin-top: 2%;
+        margin-left: 5%;
+        margin-right: 5%;
+   }
+
+   /* the current conditions grid */
+
+   .clear {
+    background-image: url(/weather/docs/weather-images/clear-large.jpg)
+  }
+
+  .clouds {
+    background-image: url(/weather/docs/weather-images/clouds-large.jpg)
+  }
+  
+  .fog {
+    background-image: url(/weather/docs/weather-images/fog-large.jpg)
+  }
+  
+  .rain {
+    background-image: url(/weather/docs/weather-images/rain-large.jpg)
+  }
+  
+  .snow {
+    background-image: url(/weather/docs/weather-images/snow-large.jpg)
+  }
+
    .small-container #current-conditions {
+        grid-column: 1 / span 3;
+   }
+
+
+
+   #temp-actual {
        grid-column: 1 / span 3;
    }
 
-   
+   #temp-hi {
+        
+        text-align: right;
+   }
+
+   #temp-lo {
+       
+       text-align: left;
+   }
+
+
+
+ 
+
+/* navigation bar */
+
+nav ul {
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+    background-color: black;
+    width: 100%;
+}
+
+nav ul li a {
+    float: left;
+    color: white;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul li a:active {
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+    color:white;
+}
+
+.active {
+    background-color: #4CAF50;
+    color: white;
+} 
+
+#menu {
+    display: none;
+}
+
+#toggle {
+    display: none;
+}
+
+footer {
+    margin-top: 60px;
+}
 }
