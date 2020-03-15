@@ -1,4 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+
+#status {
+  margin-top: 3em;
+  text-align: center;
+  font-size: x-large;
+}
+
+.hide2 {
+  display:none;
+}
+
+/* .hide {
+  display: none;
+} */
 #wrapper {
     font-family: 'Montserrat', sans-serif;
 }
@@ -8,12 +22,19 @@ html {
     box-sizing: border-box;
 }
 
+/* hide class  */
+
+.hide {
+  display: none;
+}
+
 /* Container for content of the site. */
 
 #grid-container {
     min-height: 100%;
     display: grid;
     grid-template-columns: 1fr;
+    
 }
 
 #grid-item2 {
@@ -35,7 +56,8 @@ div #grid-item2 img {
 }
 
 #header {
-    font-size: 2em;
+    font-size: 3em;
+    color: white;
     text-align: center;
     grid-column: 2;
     grid-row:1 / span 2;
@@ -95,13 +117,19 @@ div #grid-item2 img {
 #current-conditions {
   border: 3px solid black;
   border-radius: 10px;
-  margin: 5% 5% 5% 5%;
+  margin: auto;
+  width: 95%;
+  margin-bottom: 10px;
+  height: auto;
   box-shadow: 0 2px 15px gray;
+  text-align: center;
 }
 
 #temp-actual {
-  font-size: 4em;
-  text-align: center;
+  font-size: 6em;
+  margin: 0em;
+  display: inline;
+  padding: .7em;
 }
 
 #feel {
@@ -110,31 +138,36 @@ div #grid-item2 img {
 }
 
 #feelTemp {
-  text-align: center;
+  display: inline;
   font-size: 1em;
 }
 
 #temp-hi {
-  font-size: 2em;
   color: red;
-  text-align: center;
+  display: inline;
+  font-size: 2.5em;
+  position: relative;
+  top: -.7em;
 }
 
 #temp-lo {
-  font-size: 2em;
+  font-size: 2.5em;
   color: blue;
-  text-align: center;
+  display: inline;
+  position: relative;
+  top: -.7em;
 }
 
 div p img {
+  opacity: 0.5;
   width: 20px;
   height: 20px;
 }
 
 #wind-speed {
-  font-size: 1em;
-  text-align:center;
-  margin-bottom: 10%;
+  display: inline;
+  font-size: 1.5em;
+  margin: 2em;
 }
 
 /* current temp  */
@@ -148,6 +181,7 @@ div p img {
 }
 
 #current-temp p {
+  color: black;
   font-size: 2em;
 }
 
@@ -280,6 +314,7 @@ div p img {
 }
 
 #current-precip p {
+  color: black;
   font-size: 2em;
   text-align: center;
 }
@@ -302,6 +337,7 @@ div p img {
 }
 
 #conditions p {
+  color: black;
   font-size: 2em;
   text-align: center;
 }

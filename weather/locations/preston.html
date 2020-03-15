@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +8,7 @@
     <meta name="description"
     content="Assignment portal for Conner Judd in CIT 230: Web Frontend Development at Brigham Young University - Idaho."
     author="Conner Judd">
-    <title>Preston</title>
+    <title id="page-title">Preston</title>
 
 <!--css-->
 
@@ -23,16 +24,14 @@
 <div id="wrapper">
     <body>
         <div id="grid-container">
-            <main>
-                <div id="grid-item2">
-                    <img src="/weather/images/sitelogo.jpg" alt="Logo of a hot chocolate mug.">
-                    <header id="header">
-                        <h5>The Weather Site</h5>
-                        <h6 id="tag-line">Keeping you cozy and warm all year long.</h6>
-                    </header>
-                </div>
+
+            
+            <main id="main-content">
+
+                <!-- top navigation bar  -->
+
                 <div id="grid-item1">
-                    <nav>
+                    <nav id="page-nav">
                         <ul>
                             <li><a href="/index.html">Home</a></li>
                             <li><a href="/design/index.html">Design Principles</a></li>
@@ -44,164 +43,120 @@
                     </nav>
                 </div>
 
-                <!-- location info  -->
+                <!-- site logo and slogan  -->
 
-                <div id="location-info">
-                    <h2 id="location-name">Preston</h2>
-                    <p id="gps"><span class="bold">Gps: </span>42.543, 111.5231</p>
+                <div id="grid-item2">
+                    <img src="/weather/images/sitelogo.jpg" alt="Logo of a hot chocolate mug.">
+                    <header id="header">
+                        <h5>The Weather Site</h5>
+                        <h6 id="tag-line">Keeping you cozy and warm all year long.</h6>
+                    </header>
                 </div>
 
-                <!-- container for the content  -->
-            
-                <div class="small-container clouds" id="weather-image">
-                    
-                    <!-- current weather conditions component  -->
-                    
-                    <div id="current-conditions">
-                        <p id="temp-actual"><strong>51&deg;F</strong></p>
-                        <p id="feel">Feels Like <span id="feelTemp"></span> &deg; F</p>
-                        <p id="temp-hi">58&deg;</p>
-                        <p id="temp-lo">34&deg;</p>
-                        <p id="wind-speed"><img src="/weather/images/wind.jpg" alt="cartoon drawing of wind">4.8mph</p>
-                    </div>
-                    
+                <div>
+                    <nav>
+                    <ul>
+                        <li><a href="#">Preston</a></li>
+                        <li><a href="#">Soda Springs</a></li>
+                    </ul>
+                    </nav>  
+                </div>
+               
+                <!-- location info  -->
 
-                    <!-- the current temperature  -->
-
-                    <div id="current-temp">
-                        <p><strong>Temperature</strong></p>
-                        <section>
-                            <div class="component">
-                            <div class="clock">
-                                <div class="temp temp1">1&deg;</div>
-                                <div class="temp temp2">2&deg;</div>
-                                <div class="temp temp3">3&deg;</div>
-                                <div class="temp temp4">4&deg;</div>
-                                <div class="temp temp5">5&deg;</div>
-                                <div class="temp temp6">6&deg;</div>
-                                <div class="temp temp7">7&deg;</div>
-                                <div class="temp temp8">8&deg;</div>
-                                <div class="temp temp9">9&deg;</div>
-                                <div class="temp temp10">10&deg;</div>
-                                <div class="temp temp11">11&deg;</div>
-                                <div class="temp temp12">12&deg;</div>
-                                    <div class="clock2 clock-temp">
-                                        <div class="hand hour" data-hour-hand></div>
-                                        <div class="hand minute" data-minute-hand></div>
-                                        <div class="hand second" data-second-hand></div>
-                                        <div class="number number1">1</div>
-                                        <div class="number number2">2</div>
-                                        <div class="number number3">3</div>
-                                        <div class="number number4">4</div>
-                                        <div class="number number5">5</div>
-                                        <div class="number number6">6</div>
-                                        <div class="number number7">7</div>
-                                        <div class="number number8">8</div>
-                                        <div class="number number9">9</div>
-                                        <div class="number number10">10</div>
-                                        <div class="number number11">11</div>
-                                        <div class="number number12">12</div>
-                                        <div class="center-dial"><p>51&deg;F</p></div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </section>
-
+                <section id="status">Please be patient while I get your information.</section>
+                <div id="main-content" class="hide">
+                    <div id="location-info">
+                        <h2 id="location-name">Preston</h2>
+                        <p id="gps"><span class="bold">Gps: </span>42.543, 111.5231</p>
                     </div>
 
-                    <!-- the current precipitation  -->
-
-                    <div id="current-precip">
+                    <!-- container for the content  -->
+                
+                    <div class="small-container clouds" id="weather-image">
                         
-                        <section>
-                            <p><strong>Precipitation</strong></p>
-                            <div class="component">
+                        <!-- current weather conditions component  -->
+                        
+                        <div id="current-conditions">
+                            <p id="temp-hi">58&deg;</p>
+                            <p id="temp-actual"><strong>51&deg;F</strong></p>
+                            <p id="temp-lo">34&deg;</p>
+                            <p id="feel">Feels Like <span id="feelTemp"></span> &deg; F</p>
+                            <p id="wind-speed"><img src="/weather/images/wind.jpg" alt="cartoon drawing of wind">4.8mph</p>
+                            <p id="wind-gusts" class="wind">Gusts: ?? mph</p>
+                        </div>
+
+
+                        
+
+                        <!-- the current temperature  -->
+
+                        <div id="current-temp">
+                            <p><strong>Temperature</strong></p>
+                            <section>
+                                <div class="component">
                                 <div class="clock">
-                                <div class="temp temp1">40</div>
-                                <div class="temp temp2">20</div>
-                                <div class="temp temp3">20</div>
-                                <div class="temp temp4">20</div>
-                                <div class="temp temp5">20</div>
-                                <div class="temp temp6">10</div>
-                                <div class="temp temp7">20</div>
-                                <div class="temp temp8">20</div>
-                                <div class="temp temp9">30</div>
-                                <div class="temp temp10">20</div>
-                                <div class="temp temp11">10</div>
-                                <div class="temp temp12">20</div>
-                                <div class="clock2 clock-precip">
-                                    <div class="hand hour" id="hnd-hr1" data-hour-hand></div>
-                                    <div class="hand minute" id="hnd-mn1" data-minute-hand></div>
-                                    <div class="hand second" id="hnd-sc1" data-second-hand></div>
-                                    <div class="number number1">1</div>
-                                    <div class="number number2">2</div>
-                                    <div class="number number3">3</div>
-                                    <div class="number number4">4</div>
-                                    <div class="number number5">5</div>
-                                    <div class="number number6">6</div>
-                                    <div class="number number7">7</div>
-                                    <div class="number number8">8</div>
-                                    <div class="number number9">9</div>
-                                    <div class="number number10">10</div>
-                                    <div class="number number11">11</div>
-                                    <div class="number number12">12</div>
-                                    <div class="center-dial">
-                                        <img id="umbrella" src="/weather/images/umbrella.jpg" alt="black umbrella icon">
+                                    <div class="temp temp1">1&deg;</div>
+                                    <div class="temp temp2">2&deg;</div>
+                                    <div class="temp temp3">3&deg;</div>
+                                    <div class="temp temp4">4&deg;</div>
+                                    <div class="temp temp5">5&deg;</div>
+                                    <div class="temp temp6">6&deg;</div>
+                                    <div class="temp temp7">7&deg;</div>
+                                    <div class="temp temp8">8&deg;</div>
+                                    <div class="temp temp9">9&deg;</div>
+                                    <div class="temp temp10">10&deg;</div>
+                                    <div class="temp temp11">11&deg;</div>
+                                    <div class="temp temp12">12&deg;</div>
+                                        <div class="clock2 clock-temp">
+                                            <div class="hand hour" data-hour-hand></div>
+                                            <div class="hand minute" data-minute-hand></div>
+                                            <div class="hand second" data-second-hand></div>
+                                            <div class="number number1">1</div>
+                                            <div class="number number2">2</div>
+                                            <div class="number number3">3</div>
+                                            <div class="number number4">4</div>
+                                            <div class="number number5">5</div>
+                                            <div class="number number6">6</div>
+                                            <div class="number number7">7</div>
+                                            <div class="number number8">8</div>
+                                            <div class="number number9">9</div>
+                                            <div class="number number10">10</div>
+                                            <div class="number number11">11</div>
+                                            <div class="number number12">12</div>
+                                            <div class="center-dial"><p>51&deg;F</p></div>
+                                        </div>
+                                        
                                     </div>
                                 </div>
-                                </div>
-                            </div>
-                        </section>
+                            </section>
 
-                    </div>
+                        </div>
 
-                    <!-- the conditions component -->
-                    <div id="conditions">
-                        <section>
-                            <p><strong>Conditions</strong></p>
-                            <div class="component">
-                            <div class="clock">
-                                <div class="temp temp1">
-                                    <img id="rain-cloud" src="/weather/images/rain-icon.jpg" alt="cloud raining">
-                                </div>
-                                <div class="temp temp2">
-                                    <img src="/weather/images/snow-icon.jpg" alt="cloud snowing" id="snow">
-                                </div>
-                                <div class="temp temp3">
-                                    <img src="/weather/images/cloudy-icon.jpg" alt="cloud" id="cloud">
-                                </div>
-                                <div class="temp temp4">
-                                    <img src="/weather/images/cloudy-icon.jpg" alt="cloud" id="cloud">
-                                </div>
-                                <div class="temp temp5">
-                                    <img src="/weather/images/cloudy-icon.jpg" alt="cloud" id="cloud">
-                                </div>
-                                <div class="temp temp6">
-                                    <img src="/weather/images/cloudy-icon.jpg" alt="cloud" id="cloud">
-                                </div>
-                                <div class="temp temp7">
-                                    <img src="/weather/images/overcast-icon.jpg" alt="sun overcast with clouds" id="overcast">
-                                </div>
-                                <div class="temp temp8"> 
-                                    <img src="/weather/images/overcast-icon.jpg" alt="sun overcast with clouds" id="overcast">
-                                </div>
-                                <div class="temp temp9">
-                                    <img src="/weather/images/overcast-icon.jpg" alt="sun overcast with clouds" id="overcast">
-                                </div>
-                                <div class="temp temp10">
-                                    <img src="/weather/images/sun-icon.jpg" alt="the sun" id="sun">
-                                </div>
-                                <div class="temp temp11">
-                                    <img src="/weather/images/sun-icon.jpg" alt="the sun" id="sun">
-                                </div>
-                                <div class="temp temp12">
-                                    <img src="/weather/images/sun-icon.jpg" alt="the sun" id="sun">
-                                </div>
-                                    <div class="clock2 clock-curr">
-                                        <div class="hand hour" id="hnd-hr2" data-hour-hand></div>
-                                        <div class="hand minute" id="hnd-mn2" data-minute-hand></div>
-                                        <div class="hand second" id="hnd-sc2" data-second-hand></div>
+                        <!-- the current precipitation  -->
+
+                        <div id="current-precip">
+                            
+                            <section>
+                                <p><strong>Precipitation</strong></p>
+                                <div class="component">
+                                    <div class="clock">
+                                    <div class="temp temp1">40</div>
+                                    <div class="temp temp2">20</div>
+                                    <div class="temp temp3">20</div>
+                                    <div class="temp temp4">20</div>
+                                    <div class="temp temp5">20</div>
+                                    <div class="temp temp6">10</div>
+                                    <div class="temp temp7">20</div>
+                                    <div class="temp temp8">20</div>
+                                    <div class="temp temp9">30</div>
+                                    <div class="temp temp10">20</div>
+                                    <div class="temp temp11">10</div>
+                                    <div class="temp temp12">20</div>
+                                    <div class="clock2 clock-precip">
+                                        <div class="hand hour" id="hnd-hr1" data-hour-hand></div>
+                                        <div class="hand minute" id="hnd-mn1" data-minute-hand></div>
+                                        <div class="hand second" id="hnd-sc1" data-second-hand></div>
                                         <div class="number number1">1</div>
                                         <div class="number number2">2</div>
                                         <div class="number number3">3</div>
@@ -214,13 +169,82 @@
                                         <div class="number number10">10</div>
                                         <div class="number number11">11</div>
                                         <div class="number number12">12</div>
-                                        <div class="center-dial"><p>51&deg;F</p></div>
+                                        <div class="center-dial">
+                                            <img id="umbrella" src="/weather/images/umbrella.jpg" alt="black umbrella icon">
+                                        </div>
+                                    </div>
                                     </div>
                                 </div>
-                            </div>
-                        </section>
-                    </div>
-            </div>
+                            </section>
+
+                        </div>
+
+                        <!-- the conditions component -->
+                        <div id="conditions">
+                            <section>
+                                <p><strong>Conditions</strong></p>
+                                <div class="component">
+                                <div class="clock">
+                                    <div class="temp temp1">
+                                        <img id="rain-cloud" src="/weather/images/rain-icon.jpg" alt="cloud raining">
+                                    </div>
+                                    <div class="temp temp2">
+                                        <img src="/weather/images/snow-icon.jpg" alt="cloud snowing" id="snow">
+                                    </div>
+                                    <div class="temp temp3">
+                                        <img src="/weather/images/cloudy-icon.jpg" alt="cloud" id="cloud">
+                                    </div>
+                                    <div class="temp temp4">
+                                        <img src="/weather/images/cloudy-icon.jpg" alt="cloud" id="cloud">
+                                    </div>
+                                    <div class="temp temp5">
+                                        <img src="/weather/images/cloudy-icon.jpg" alt="cloud" id="cloud">
+                                    </div>
+                                    <div class="temp temp6">
+                                        <img src="/weather/images/cloudy-icon.jpg" alt="cloud" id="cloud">
+                                    </div>
+                                    <div class="temp temp7">
+                                        <img src="/weather/images/overcast-icon.jpg" alt="sun overcast with clouds" id="overcast">
+                                    </div>
+                                    <div class="temp temp8"> 
+                                        <img src="/weather/images/overcast-icon.jpg" alt="sun overcast with clouds" id="overcast">
+                                    </div>
+                                    <div class="temp temp9">
+                                        <img src="/weather/images/overcast-icon.jpg" alt="sun overcast with clouds" id="overcast">
+                                    </div>
+                                    <div class="temp temp10">
+                                        <img src="/weather/images/sun-icon.jpg" alt="the sun" id="sun">
+                                    </div>
+                                    <div class="temp temp11">
+                                        <img src="/weather/images/sun-icon.jpg" alt="the sun" id="sun">
+                                    </div>
+                                    <div class="temp temp12">
+                                        <img src="/weather/images/sun-icon.jpg" alt="the sun" id="sun">
+                                    </div>
+                                        <div class="clock2 clock-curr">
+                                            <div class="hand hour" id="hnd-hr2" data-hour-hand></div>
+                                            <div class="hand minute" id="hnd-mn2" data-minute-hand></div>
+                                            <div class="hand second" id="hnd-sc2" data-second-hand></div>
+                                            <div class="number number1">1</div>
+                                            <div class="number number2">2</div>
+                                            <div class="number number3">3</div>
+                                            <div class="number number4">4</div>
+                                            <div class="number number5">5</div>
+                                            <div class="number number6">6</div>
+                                            <div class="number number7">7</div>
+                                            <div class="number number8">8</div>
+                                            <div class="number number9">9</div>
+                                            <div class="number number10">10</div>
+                                            <div class="number number11">11</div>
+                                            <div class="number number12">12</div>
+                                            <div class="center-dial"><p id="cond-temp">51&deg;F</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>        
+                </div>
             </main>
         <div id="grid-item4">
             <footer>
