@@ -25,11 +25,21 @@ ul {
     background-color: #111;
   }
 
+  .grid-container {
+    margin-top: 10%;
+    
+  }
+
 /* H1 header */
 
 .item1 {
     text-align: center;
     font-size: 5em;
+}
+
+p {
+  text-align: center;
+  font-size: 2em;
 }
 
 /* Footer*/
@@ -39,6 +49,7 @@ ul {
     text-align: center;
     padding-top: 1%;
     font-size: 30px;
+    margin-top: 10%;
 
 }
 

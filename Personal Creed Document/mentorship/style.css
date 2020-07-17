@@ -31,7 +31,21 @@ ul {
     text-align: center;
     font-size: 5em;
 }
+#advice {
+  font-size: 4em;
+  font-weight: bold;
+}
 
+#board {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+p {
+  font-size: 2em;
+  margin-left: 10%;
+  margin-right: 10%;
+}
 
 /* Footer*/
 

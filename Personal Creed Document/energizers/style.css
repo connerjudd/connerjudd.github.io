@@ -32,6 +32,24 @@ ul {
     font-size: 5em;
 }
 
+
+p {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 2em;
+}
+
+.headers {
+  text-align: center;
+}
+
+
+ol li {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 2em;
+}
+
 /* Footer*/
 
 .item4 {

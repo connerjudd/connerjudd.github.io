@@ -32,6 +32,12 @@ ul {
     font-size: 5em;
 }
 
+p {
+  font-size: 2em;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 /* Footer*/
 
 .item4 {

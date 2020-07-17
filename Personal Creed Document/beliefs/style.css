@@ -1,5 +1,5 @@
 /*Navigation Bar*/
-ul {
+.grid-nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -7,11 +7,11 @@ ul {
     background-color: #333;
   }
   
-  ul li {
+  .grid-nav ul li {
     float: left;
   }
   
-  ul li a {
+  .grid-nav ul li a {
     display: block;
     color: white;
     text-align: center;
@@ -21,9 +21,24 @@ ul {
   }
   
 /* Change the link color to #111 (black) on hover */
-  ul li a:hover {
+  .grid-nav ul li a:hover {
     background-color: #111;
   }
+
+/* item2 */
+.item2 {
+  list-style-type: none;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: white;
+  color: black;
+  font-size: 2em;
+  
+}
+.item2 li {
+  list-style-type: none;
+  padding-bottom: 20px;
+}
 
 /* H1 header */
 
